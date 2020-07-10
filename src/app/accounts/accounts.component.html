@@ -1,0 +1,25 @@
+<div class="row">
+    <hr>
+
+
+
+    <table class="list-group">
+      <thead>
+          <tr>
+            <th style="width: 30%">Account</th>
+            <th style="width: 20%">Avaliable Cash</th>
+            <th style="width: 10%">Today's Change</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let account of accounts">
+       <td class="account-color"> {{ account.account }}</td>
+        <td> {{ account.amount }}  </td>
+        <td> {{account.percentageChange}}  </td>
+      </tr>
+
+    </table>
+</div>
